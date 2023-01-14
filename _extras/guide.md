@@ -228,6 +228,9 @@ This Instructor notes are based on the [corresponding page](https://datacarpentr
 # Notes for the Introduction to R for Metagenomics lesson
 
 FIXME: Add
+In the 'Redirecting output' section, the command 'grep -B1 -A2 NNNNNNNNNN JC1A_R2.fastq > bad_reads.txt', the output is redirected to >bad_reads.txt instead of bad_reads.fastq even when the output file is a FastQ format file. This is to avoid unintended warnings and output further in the lesson when grep is run to append all fastq bad reads with 'grep -B1 -A2 NNNNNNNNNN *.fastq >> bad_reads.txt' instead of 'grep -B1 -A2 NNNNNNNNNN *.fastq > bad_reads.fastq'.
+
+
 
 # Notes for the Data processing and visualization for metagenomics lesson
 
